@@ -36,7 +36,7 @@ export default async function handler(req, res) {
             bcc: bcc,
             subject: subject,
             [isHtml ? 'html' : 'text']: message, // Choose between HTML and plain text
-            attachments: attachments // Array of attachment objects
+            [attachments ? 'attachments' : 'vd'] : attachments // Array of attachment objects
         };
 
         try {

@@ -28,7 +28,7 @@ export default async function handler(req, res) {
                 pass: 'slpnmsoifpcjttbg'
             }
         });
-
+        if (attachments != "") {
         const mailOptions = {
             from: 'litnitimounsef@gmail.com',
             to: to,
@@ -36,8 +36,17 @@ export default async function handler(req, res) {
             bcc: bcc,
             subject: subject,
             [isHtml ? 'html' : 'text']: message, // Choose between HTML and plain text
-            [attachments ? 'attachments' : 'vd'] : attachments // Array of attachment objects
-        };
+            attachments : attachments // Array of attachment objects
+        };}else{
+        
+        const mailOptions = {
+            from: 'litnitimounsef@gmail.com',
+            to: to,
+            cc: cc,
+            bcc: bcc,
+            subject: subject,
+            [isHtml ? 'html' : 'text']: message, // Choose between HTML and plain text
+        };}
 
         try {
             await transporter.sendMail(mailOptions);

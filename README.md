@@ -127,4 +127,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any questions or feedback, please reach out to [your-email@gmail.com](mailto:litnitimounsef@gmail.com).
+For any questions or feedback, please reach out to [litnitimounsef@gmail.com](mailto:litnitimounsef@gmail.com).
